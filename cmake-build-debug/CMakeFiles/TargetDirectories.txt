@@ -1,0 +1,3 @@
+/Users/livia/Documents/Work/Meditatii/active/Alexandra/sd-poli-repo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/livia/Documents/Work/Meditatii/active/Alexandra/sd-poli-repo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/livia/Documents/Work/Meditatii/active/Alexandra/sd-poli-repo/cmake-build-debug/CMakeFiles/sd_poli_repo.dir
