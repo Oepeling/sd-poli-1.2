@@ -78,7 +78,40 @@ Node* number(Node* start) {        //nr de elemente din lista
     }
     
     return c;
-}    
+}   
+
+Node* find_element(Node *start, int x) {        //gaseste elementul
+    if(start == NULL) {
+        return 0;
+    }
+    
+    if (node->value == x) {
+        return 1;
+    }
+    
+    while(node != NULL && node->value != x) {
+        node = node->next;
+    }
+}
+
+Node* delete_first(Node *start, int x) {        //sterge prima aparitie
+    if(start == NULL) {
+       return 0;
+    }
+    
+    if (node->next == NULL) {
+        if ( node->value == x ) {
+            delete node;
+            return 0;
+        }
+        else
+            return 0;
+    }
+    
+    if (node->next->value == x) {
+        delete node->next;
+    }
+}
     
 void print(Node* start) {
     for (Node* node = start; node != NULL; node = node->next) {
