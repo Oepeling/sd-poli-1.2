@@ -43,6 +43,43 @@ Node* insert_back(Node* start, int x) {
     return start;
 }
 
+Node* delete_back(Node* start) {         //stergere de la final
+    Node* new_node = (Node*) malloc(sizeof(Node));
+    
+    if (start == NULL) {
+        return 0;
+    }
+    
+    if (start->next == NULL) {
+        delete new_node;
+        return 0;
+    }
+    
+    if(node->next->next == NULL) {
+        delete node->next;
+        node = new_node;
+        return node;
+    }
+}
+
+Node* number(Node* start) {        //nr de elemente din lista
+    int c = 0;
+    
+    if(start == NULL){
+        return 0;
+    }
+    
+    if (start->next == NULL){
+        return 1;
+    }
+    
+    for (Node* node = start; node != NULL; node = node->next) {
+        c ++;
+    }
+    
+    return c;
+}    
+    
 void print(Node* start) {
     for (Node* node = start; node != NULL; node = node->next) {
         cout << "( addr: " << node << ", val: " << node->value << " ) -> ";
